@@ -32,6 +32,20 @@ Each folder represents a pattern or data-structure-focused category.
 
 ## 📂 Folder Structure
 
+dsa-java/
+|
+|-- two_pointers/
+|-- sliding_window/
+|-- binary_search/
+|-- recursion/
+|-- linkedlist/
+|-- stack/
+|-- queue/
+|-- trees/
+|-- graph/
+|-- hashing/
+|-- dynamic_programming/
+
 (Folders will be added as I progress.)
 
 ---
