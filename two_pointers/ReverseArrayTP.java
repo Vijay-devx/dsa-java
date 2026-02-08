@@ -50,6 +50,7 @@ public class ReverseArrayTP
         if(count==0)
         {
             System.out.println("No Numbers Entered");
+            sc.close();
             return;                                                  // program ends immidiately, if no input.
         }
 
