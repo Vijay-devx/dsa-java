@@ -4,6 +4,12 @@
    
    input: n, sorted array, target 
    output: Found / Not Found
+
+
+   logic:
+
+   if, smallest+largest is too small -> increase the smallest
+   if smallest+largest is loo large  -> reduce the largest
 */
 
 import java.util.Scanner;
