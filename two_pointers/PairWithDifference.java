@@ -1,5 +1,5 @@
 
-// Pair with Given Difference(Sorted Array)
+// Pair with Given Difference
 /*
    Problem:
    Given a sorted array of integers and an integer k, check if there exists a pait(i,j) such that:
@@ -17,9 +17,12 @@ public class PairWithDifference
 {
     static boolean pairWithDifference(int[] arr, int n, int target)
     {
+        Arrays.sort(arr);
+
         int left = 0;
-        int right = n-1;
-        while(left<right)
+        int right = 1;
+        
+        while(right<n)
         {
             int diff = arr[right]-arr[left];
 
