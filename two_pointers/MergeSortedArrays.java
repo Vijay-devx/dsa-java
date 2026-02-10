@@ -20,31 +20,23 @@ public class MergeSortedArrays
         {
             if(arr1[i]<=arr2[j])
             {
-                merge[k] = arr1[i];
-                i++;
+                merge[k++] = arr1[i++];        // k++/i++ , here ++ is post-increment, it means that it uses current value of k/i first then increase them by 1.,   if it was ++k then here ++ is pre-increment, it means value increases first then used.
             }
 
             else
             {
-                merge[k] = arr2[j];
-                j++;
+                merge[k++] = arr2[j++];
             }
-
-            k++;
         }
 
         while(i<m)
         {
-            merge[k] = arr1[i];
-            k++;
-            i++;
+            merge[k++] = arr1[i++];
         }
 
         while(j<n)
         {
-            merge[k] = arr2[j];
-            k++;
-            j++;
+            merge[k++] = arr2[j++];
         }
 
         return merge;
