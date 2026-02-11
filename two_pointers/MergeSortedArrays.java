@@ -8,6 +8,8 @@ public class MergeSortedArrays
 {
     static int[] arrayMerge(int[] arr1, int[] arr2, int m, int n)
     {
+        // Sort the arrays first before calling this method.
+           
         int x = m + n;
        
         int[] merge = new int[x];
@@ -29,7 +31,7 @@ public class MergeSortedArrays
             }
         }
 
-        while(i<m)
+        while(i<m)                          // this is just cleanup, one of the two arrays will be exhausted from above loop, whichever is remaining, we will copy its values as it is to the merged array.
         {
             merge[k++] = arr1[i++];
         }
@@ -67,7 +69,7 @@ public class MergeSortedArrays
             arr2[i] = sc.nextInt();
         }
 
-        Arrays.sort(arr1);
+        Arrays.sort(arr1);           // sort the arrays first.
         Arrays.sort(arr2);
 
         int[] Result = arrayMerge(arr1, arr2, m, n);
